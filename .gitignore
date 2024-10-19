@@ -2,3 +2,9 @@
 
 /.venv
 
+/src/data/processed
+
+/src/__pycache__
+
+/src/data/raw
+
