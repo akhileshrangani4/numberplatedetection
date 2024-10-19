@@ -1,0 +1,6 @@
+train: ../src/data/processed/images/train
+val: ../src/data/processed/images/val
+nc: 1  # number of classes
+names: ['license_plate']  # class names
+
+

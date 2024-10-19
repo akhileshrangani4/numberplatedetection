@@ -1,0 +1,43 @@
+backbone:
+  - type: conv
+    filters: 32
+    kernel_size: 3
+    stride: 1
+  - type: conv
+    filters: 64
+    kernel_size: 3
+    stride: 2
+  - type: conv
+    filters: 64
+    kernel_size: 1
+    stride: 1
+  - type: conv
+    filters: 128
+    kernel_size: 3
+    stride: 2
+  - type: conv
+    filters: 64
+    kernel_size: 1
+    stride: 1
+  - type: conv
+    filters: 128
+    kernel_size: 3
+    stride: 1
+  - type: conv
+    filters: 256
+    kernel_size: 3
+    stride: 2
+  - type: conv
+    filters: 128
+    kernel_size: 1
+    stride: 1
+  - type: conv
+    filters: 256
+    kernel_size: 3
+    stride: 1
+
+head:
+  in_channels: 512
+  out_channels: 18  # (num_classes + 5) * num_anchors
+
+num_classes: 1  # Set this to the number of classes in your dataset
